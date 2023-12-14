@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.flex{
+    display: flex;
+    gap: 20px;
+    background-color: beige;
+    padding: 10px 20px;
+    justify-content: center;
+}
+.flex div{
+    padding: 10px 25px;
+    background-color: aquamarine;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.gr1{grid-area: head;}
+.gr2{grid-area: body1;}
+.gr3{grid-area: body2;}
+.gr4{grid-area: body3;}
+.gr5{grid-area: body4;}
+.gr6{grid-area: body5;}
+.gr7{grid-area: footer;}
+.grid{
+    background-color: rgb(3, 62, 172);
+    padding: 20px 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 'head head body1'
+    'body2 body3 body3'
+    'body4 body5 footer';
+}
+.grid>div{
+    background-color: cadetblue;
+    color: black;
+    text-align: center;
+    padding: 50px 0;
+}
